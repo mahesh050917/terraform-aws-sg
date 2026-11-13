@@ -17,3 +17,6 @@ variable "sg_name" {
   default = ""
 }
 
+variable "vpc_id" {
+  type = string
+}
