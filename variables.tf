@@ -1,0 +1,19 @@
+variable "project" {
+  type = string 
+  
+}
+
+variable "environment" {
+  type = string
+}
+
+variable "sg_tags" {
+  type = map(any)
+  default = {}
+}
+
+variable "sg_name" {
+  type = string
+  default = {}
+}
+
