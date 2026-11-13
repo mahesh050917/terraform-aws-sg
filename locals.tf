@@ -5,9 +5,9 @@ locals {
         terraform = true
     }
     
-    sg_name = "mongodb"
+    sg_name = "${var.project}-${var.environment}-${var.sg_name}-sg"
       
     sg_tags = {
-        name = "${var.project}-${var.environment}-${var.sg_name}-sg"     
+        Name = "${var.project}-${var.environment}-${var.sg_name}-sg"     
     }
 }
